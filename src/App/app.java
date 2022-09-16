@@ -2,17 +2,20 @@ package App;
 
 import java.awt.EventQueue;
 
-import DAO.CheckLogin;
-import GUI.DangNhap;
+//import DAO.CheckLogin;
+//import GUI.DangNhap;
+import GUI.course;
 
 public class app {
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
-			@Override
 			public void run() {
-				DangNhap login = new DangNhap();
-				new CheckLogin(login);
-				login.showLoginView();
+				try {
+					course frame = new course();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 			}
 		});
 	}

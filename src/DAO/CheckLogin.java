@@ -33,7 +33,8 @@ public class CheckLogin {
 					String username = "root";
 					String password = "";
 		            Class.forName("com.mysql.jdbc.Driver");
-					String dbURL = "jdbc:mysql://127.0.0.1/quanlikhoahoc";
+		            System.out.println("Something");
+					String dbURL = "jdbc:mysql://127.0.0.1/quanlykhoahoc";
 					conn = DriverManager.getConnection(dbURL,username,password);
 					
 					stmt = conn.createStatement();
